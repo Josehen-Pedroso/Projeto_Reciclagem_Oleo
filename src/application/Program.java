@@ -30,7 +30,7 @@ public class Program {
 					String telefone = sc.nextLine();
 					System.out.print("CPF: ");
 					String cpf = sc.nextLine();
-					while (pt.validarCpf(cpf) || !cpf.equals("0")) {
+					while (pt.validarCpf(cpf) && !cpf.equals("0")) {
 						System.out.println("CPF "+ cpf + "já cadastrado");
 						System.out.println("Digite outro CPF ou 0 para cancelar: ");
 						cpf = sc.nextLine();
